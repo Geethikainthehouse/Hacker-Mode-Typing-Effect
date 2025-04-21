@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro Screen -->
+  <div id="intro-screen" class="intro-screen">
+    <h1 class="title">Hacker Mode</h1> </br>
+    <p class="instructions">This is a fake hacker terminal.
+      It's made for aesthetic, vibe, and fun.
+      You can use it for backgrounds, intros, or <strong>just to feel cool.</strong> </br>
+      </br>
+      It’s just an effect. It’s not real. Press space to begin.</br>
+      </br> <strong>Instructions:</strong> Press space to stop. Press space again to resume.
+    </br> </br> - geethika
+    </p>
+  </div>
+
+  <style>
+    .intro-screen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+      text-align: center;
+      padding: 0 2rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+  
+    .instructions {
+      font-size: 1.2rem;
+      max-width: 800px; /* Keeps the paragraph from stretching too wide */
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  </style>  
+
+  <!-- Terminal Screen -->
+  <div id="terminal" class="terminal"></div>
+
+  <audio id="typewriter-sound" preload="auto" loop>
+    <source src="typewriter.mp3" type="audio/mp3">
+  </audio>  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
